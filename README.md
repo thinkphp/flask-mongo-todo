@@ -1,6 +1,3 @@
-Here's the `README.md` file for your Flask-Mongo To-Do List application:
-
-```markdown
 # Flask-Mongo To-Do List
 
 A simple to-do list application built using Flask and MongoDB, allowing users to create, update, delete, and toggle the completion status of tasks.
