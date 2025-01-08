@@ -1,0 +1,466 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    color: #2d3748;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Task list styles */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.task-description {
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+.btn-primary {
+    background: #4299e1;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3182ce;
+}
+
+.btn-danger {
+    background: #f56565;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #e53e3e;
+}
+
+.btn-secondary {
+    background: #718096;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #4a5568;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .task-item {
+        padding: 1rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Add task button */
+.add-task-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #48bb78;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.add-task-btn:hover {
+    transform: scale(1.1);
+    background: #38a169;
+}
+
+
+
+/* Modern reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f6f8fc 0%, #e9f0f7 100%);
+    min-height: 100vh;
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #1a202c;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem;
+    font-weight: 600;
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+li span {
+    display: block;
+    color: #718096;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+/* Update link */
+a[href*="update"] {
+    background: #4299e1;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+a[href*="update"]:hover {
+    background: #3182ce;
+}
+
+/* Delete link */
+a[href*="delete"] {
+    background: #f56565;
+    color: white;
+}
+
+a[href*="delete"]:hover {
+    background: #e53e3e;
+}
+
+/* Add task link */
+p a[href*="add"] {
+    background: #48bb78;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p a[href*="add"]:hover {
+    background: #38a169;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Empty state */
+ul:empty::after {
+    content: "No tasks yet. Add your first task!";
+    display: block;
+    text-align: center;
+    color: #a0aec0;
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        padding: 1.25rem;
+    }
+}
+
+
+
+
+/*ADD form*/
+
+/* Base styles remain the same... */
+
+/* Form styling */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+form p {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: #f8fafc;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+    background: white;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background: #4299e1;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+form button[type="submit"]:hover {
+    background: #3182ce;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Add floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+form {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    form button[type="submit"] {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Error state */
+form input:invalid,
+form textarea:invalid {
+    border-color: #fc8181;
+}
+
+/* Placeholder styling */
+form input::placeholder,
+form textarea::placeholder {
+    color: #a0aec0;
+}
+
+/* Focus visible outline for accessibility */
+form input:focus-visible,
+form textarea:focus-visible,
+form button:focus-visible {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+/* Required field indicator */
+form label.required::after {
+    content: "*";
+    color: #e53e3e;
+    margin-left: 4px;
+}

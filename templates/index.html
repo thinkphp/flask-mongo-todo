@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Task List</h2>
+  <ul>
+    {% for task in tasks %}
+      <li {% if task.completed %}style="opacity: 0.7; background: #f7f7f7;"{% endif %}>
+        <strong {% if task.completed %}style="text-decoration: line-through;"{% endif %}>
+          {{ task.title }}
+        </strong><br>
+        <span {% if task.completed %}style="text-decoration: line-through;"{% endif %}>
+          {{ task.description }}
+        </span><br>
+        <a href="{{ url_for('toggle_completion', task_id=task._id) }}" 
+           style="background: {% if task.completed %}#9CA3AF{% else %}#10B981{% endif %};">
+          {% if task.completed %}Mark Incomplete{% else %}Mark complete{% endif %}
+        </a>
+        <a href="{{ url_for('update', task_id=task._id) }}">Update</a>
+        <a href="{{ url_for('delete', task_id=task._id) }}">Delete</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ url_for('add') }}">Add Task</a></p>
+{% endblock %}
