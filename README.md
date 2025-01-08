@@ -63,6 +63,8 @@ A simple to-do list application built using Flask and MongoDB, allowing users to
 ```
 flask-mongo-todo/
 │
+|__ static/
+|   |__ style.css
 ├── templates/          # HTML templates for the application
 │   ├── index.html      # Main page showing all tasks
 │   ├── add.html        # Page to add a new task
