@@ -45,7 +45,9 @@ A simple to-do list application built using Flask and MongoDB, allowing users to
    ```
 
 5. Run the application:
-   ```bash
+   ```bash   
+   flask run --host=0.0.0.0 --port=5000
+   OR
    python app.py
    ```
 
